@@ -1515,7 +1515,7 @@ class FilesApi(object):
         form_params = []
         local_var_files = {}
         if "file" in local_var_params:
-            form_params.append(("file", local_var_params["file"]))  # noqa: E501
+            form_params.append(("file", ('yawn', local_var_params["file"])))  # noqa: E501
         if "folder_id" in local_var_params:
             form_params.append(
                 ("folderId", local_var_params["folder_id"])
